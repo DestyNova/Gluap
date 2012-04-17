@@ -186,7 +186,7 @@ function test_evolves_7x()
     return sum_error
   end
 
-  local best,fitness = gluap.run(double_fitness, 250, 10000)
+  local best,fitness = gluap.run(double_fitness, 250, 5000)
   print('best program so far with fitness '..fitness,best)
 end
 

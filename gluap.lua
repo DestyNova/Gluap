@@ -374,7 +374,7 @@ function environment.new()
       end
     end
     if name == nil then
-      name = 'ainm_'..tostring(math.random(1024))
+      name = 'name_'..tostring(math.random(1024))
       names[name] = true
     end
     return name
