@@ -1,16 +1,16 @@
-Gluap: A basic PushGP interpreter and genetic programming library
+###Gluap: A basic PushGP interpreter and genetic programming library
 
-Features and limitations:
-  * Cut-down subset of the simplest PushGP instructions (see the allowed_instructions table in gluap.lua)
-  * Tournament selection
-  * Mutation operators only - crossover not implemented yet
-  * Tends to get stuck in local optima almost all the time!
+####Features and limitations
+* Cut-down subset of the simplest PushGP instructions (see the allowed_instructions table in gluap.lua)
+* Tournament selection
+* Mutation operators only - crossover not implemented yet
+* Tends to get stuck in local optima almost all the time!
 
-Usage:
-  See test cases in gluap-test.lua
+####Usage
+* See test cases in gluap-test.lua
 
-Example:
-
+####Example
+```lua
 function test_evolves_7x()
   -- test function: f(x) = 7x. Minimise sum of squared errors.
   local double_fitness = function(prog)
@@ -33,3 +33,4 @@ function test_evolves_7x()
   local best,fitness = gluap.run(double_fitness, 250, 10000)
   print('best program with fitness '..fitness,best)
 end
+```
